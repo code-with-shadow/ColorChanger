@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 10px;
+        border: 2px solid black;
+      }
+
+      #red {
+        background-color: red;
+      }
+      #grey {
+        background-color: grey;
+      }
+      #blue {
+        background-color: blue;
+      }
+      #green {
+        background-color: green;
+      }
+      #yellow {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="red"></div>
+      <div class="box" id="grey"></div>
+      <div class="box" id="blue"></div>
+      <div class="box" id="green"></div>
+      <div class="box" id="yellow"></div>
+    </div>
+  </body>
+
+  <script>
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach((box) => {
+      box.addEventListener("click", function (e)
+       
+      {
+        if(e.target.id==="grey"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id==="red"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id==="blue"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id==="green"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+        if(e.target.id==="yellow"){
+            document.body.style.backgroundColor = e.target.id;
+        }
+      } )
+
+    });
+
+    // const flag = true;
+
+    // box1.addEventListener('click', function(){
+    //     document.body.classList.toggle('red');
+    //     // document.body.style.backgroundColor = 'red';
+    // })
+    // box2.addEventListener('click', function(){
+    //     document.body.classList.toggle('grey');
+    //     // document.body.style.backgroundColor = 'grey';
+    // })
+    // box3.addEventListener('click', function(){
+    //     document.body.classList.toggle('blue');
+    //     // document.body.style.backgroundColor = 'blue';
+    // })
+    // box4.addEventListener('click', function(){
+    //     document.body.classList.toggle('green');
+    //     // document.body.style.backgroundColor = 'green';
+    // })
+  </script>
+</html>
